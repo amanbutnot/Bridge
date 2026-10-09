@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<uses-permission android:name="com.github.amanbutnot.bridge.permission.CONNECT"/>
+
+    <queries>
+        <intent>
+            <action android:name="com.github.amanbutnot.bridge_service"/>
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"

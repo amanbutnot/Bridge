@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <permission
+        android:name="com.github.amanbutnot.bridge.permission.CONNECT"
+        android:label="Bridge Connection"
+        android:protectionLevel="normal" />
+
+    <application>
+        <service
+            android:name=".service.BridgeService"
+            android:exported="true"
+            android:permission="com.github.amanbutnot.bridge.permission.CONNECT">
+            <intent-filter>
+                <action android:name="com.github.amanbutnot.bridge_service" />
+            </intent-filter>
+        </service>
+    </application>
+
 </manifest>

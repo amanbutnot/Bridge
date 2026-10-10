@@ -13,6 +13,7 @@
             android:permission="com.github.amanbutnot.bridge.permission.CONNECT">
             <intent-filter>
                 <action android:name="com.github.amanbutnot.bridge_service" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </service>
     </application>

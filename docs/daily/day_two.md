@@ -36,3 +36,8 @@ Then just looping it and sending it back that's all.
 Then in
 my [Bridge Console MainActivity](../../bridge-console/src/main/java/com/github/amanbutnot/bridge/MainActivity.kt)
 just created a demo ui to get the package names.
+
+## Task 2: Connect to the discovered package and service names
+
+As we have the package name and the service name next step is to create our **Service Connection**
+and connect the intent to our app

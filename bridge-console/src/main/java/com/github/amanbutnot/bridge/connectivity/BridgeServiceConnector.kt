@@ -6,9 +6,10 @@ import android.content.Intent
 import android.content.ServiceConnection
 import android.os.IBinder
 import com.github.amanbutnot.bridge.discovery.DiscoveredBridgeService
+import org.github.amanbutnot.bridge.contract.IBridgeService
 
 class BridgeServiceConnector(discovery: DiscoveredBridgeService, private val context: Context) {
-   private val component = ComponentName(discovery.packageName, discovery.serviceClassName)
+    private val component = ComponentName(discovery.packageName, discovery.serviceClassName)
     private val intent = Intent().setComponent(component)
     private val serviceConnector = object : ServiceConnection {
         override fun onServiceConnected(
@@ -16,6 +17,8 @@ class BridgeServiceConnector(discovery: DiscoveredBridgeService, private val con
             p1: IBinder?
         ) {
             println("Service connected successfully and binder is: $p1")
+            val a = IBridgeService.Stub.asInterface(p1)
+            a.ping()
         }
 
         override fun onServiceDisconnected(p0: ComponentName?) {

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="app">
+      <SelectionState runConfigName="sample-app">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="sample-app">
+      <SelectionState runConfigName="bridge-console">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>

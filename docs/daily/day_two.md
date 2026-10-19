@@ -41,3 +41,13 @@ just created a demo ui to get the package names.
 
 As we have the package name and the service name next step is to create our **Service Connection**
 and connect the intent to our app
+
+For that we need two things one is the component and second is the intent with that we can call the **Service Connection**
+
+ComponentName is basically android's way of saying i need this exact component from the exact app and for that we need to pass the package name and the class name. 
+
+After that we create an empty intent and set its component to the component we created. 
+
+Then just create the service connection object and for now i did println to check if it is connecting or not.
+
+Then to actually connect i created a connect function that binds the service and it takes the intent, serviceconnector and BIND_AUTO_CREATE meaning if it is not created then create one.

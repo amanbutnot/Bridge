@@ -26,3 +26,4 @@ rootProject.name = "Bridge"
 include(":bridge-console")
 include(":bridge-library")
 include(":sample-app")
+include(":bridge-contract")

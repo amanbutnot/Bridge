@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/bridge-console" />
+            <option value="$PROJECT_DIR$/bridge-contract" />
             <option value="$PROJECT_DIR$/bridge-library" />
             <option value="$PROJECT_DIR$/sample-app" />
           </set>
